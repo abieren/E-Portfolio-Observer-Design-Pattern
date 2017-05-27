@@ -1,0 +1,37 @@
+<diagram program="umletino" version="14.2"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>120</x><y>210</y><w>210</w><h>90</h></coordinates><panel_attributes>/&lt;&lt;interface&gt;&gt;/
+/WSSubject/
+--
+/+register(Observer observer)/
+/+unregister(Observer observer)/
+/+notifyObservers()/</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>120</x><y>360</y><w>210</w><h>110</h></coordinates><panel_attributes>WheatherStation
+--
+-temperature: float
+-humidity: float
+-atmosphericPressure: float
+-wheather: Wheather
+--
++measureWheather()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>440</x><y>210</y><w>260</w><h>60</h></coordinates><panel_attributes>/&lt;&lt;interface&gt;&gt;/
+/WSObserver/
+--
+--
+/+update()/</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>210</x><y>290</y><w>30</w><h>90</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>UMLClass</id><coordinates><x>630</x><y>350</y><w>470</w><h>60</h></coordinates><panel_attributes>LCDLiveDisplay
+--
+--
++update()
++displayWheather(in float:temperature, in humidity:float, in float:atmosphericPressure)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>440</x><y>350</y><w>180</w><h>110</h></coordinates><panel_attributes>WheatherWebPlatform
+--
+-temperature: float
+-humidity: float
+-atmosphericPressure: float
+--
++update()
++displayWheather()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>560</x><y>260</y><w>200</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;180;90</additional_attributes></element><element><id>Relation</id><coordinates><x>520</x><y>260</y><w>70</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>50;10;10;90</additional_attributes></element><element><id>UMLClass</id><coordinates><x>120</x><y>540</y><w>210</w><h>80</h></coordinates><panel_attributes>Wheather
+--
++temperature: float
++humidity: float
++atmosphericPressure: float
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>210</x><y>460</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>240</y><w>140</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+notifies</panel_attributes><additional_attributes>120;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>400</y><w>240</w><h>120</h></coordinates><panel_attributes>lt=&lt;-
+collect information</panel_attributes><additional_attributes>10;10;110;100;220;100;220;60</additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>400</y><w>470</w><h>210</h></coordinates><panel_attributes>lt=&lt;-
+collect information</panel_attributes><additional_attributes>10;10;210;190;450;190;450;10</additional_attributes></element></diagram>
