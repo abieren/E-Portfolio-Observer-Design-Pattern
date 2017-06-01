@@ -16,13 +16,13 @@ public class WeatherStationExample {
      */
     public static void main(String[] args) {
         
-        //creating weather
+        //creating weather object
         Weather weatherOfKarlsruhe = new Weather();
         //creating weather station 
         WeatherStation weatherStationKarlsruhe = new WeatherStation(weatherOfKarlsruhe);
         //creating a web plattform that hosts the current weather information
         WeatherWebPlattform myWeather = new WeatherWebPlattform("MyWeather.com");
-        //creating a live display to show weather details to the pedestrians
+        //creating a live display that shows weather details to the pedestrians
         LCDLiveDisplay lcdLiveDisplay = new LCDLiveDisplay();
         
         //regsiter myWeather as an observer
